@@ -1,0 +1,75 @@
+﻿body {
+    width: 90%;
+    height: 90%;
+    background-color: black;
+}
+
+nav#encabezado1 {
+    background-color: black;
+    width:1200px;
+    height: 100px;
+}
+
+nav header {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+nav#encabezado2 {
+    width:900px;
+    height: 100px;
+    margin-top:5px;
+    margin-left:150px;
+}
+
+nav#encabezado2 header {
+  color:white;
+}
+
+section#cuerpo p {
+    width: 1200px;
+    height: 500px;
+    background-color: black;
+    border-block: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+prueba 
+body {
+    font-family: Tahoma;
+}
+
+section {
+    width: 880px;
+    height: 400px;
+}
+
+aside#left {
+    background-color: gold;
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin: 3px;
+    padding: 10px;
+}
+
+aside#center {
+    background-color: gold;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 3px;
+    padding: 10px;
+}
+
+aside#right {
+    background-color: gold;
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin: 3px;
+    padding: 10px;
+}

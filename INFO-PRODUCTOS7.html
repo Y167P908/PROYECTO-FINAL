@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_705810-MLM48356829479_112021-O.webp" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>Banca marcy <br /> $30</header>
+                <header id="Caracteristicas">
+                    Caracteristicas
+                </header>
+                <p>
+                    Marca	Marcy <br />
+                    Peso del producto	30 Libras <br />
+                    Material	Aleación de acero <br />
+                    Color	Negro <br>
+                    Material de GYMBRO Aleación de acero. <br />
+                    Límite de peso	300 Libras <br />
+                    Dimensiones del producto <br /> 
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://http2.mlstatic.com/D_NQ_NP_932940-MLM48356829480_112021-O.webp" alt="">
+                <img class="thumbnail" src="https://http2.mlstatic.com/D_NQ_NP_814898-MLM48356829481_112021-O.webp" alt="">
+                <img class="thumbnail" src="https://m.media-amazon.com/images/I/71gcz9RsHeL._AC_SX569_.jpg" alt="">
+                <img class="thumbnail" src="https://m.media-amazon.com/images/I/71i6QKmmP9L._AC_SX569_.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

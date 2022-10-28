@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://www.alphagym.store/wp-content/uploads/2022/01/BARRA-RECTA-GYM-3-1.jpg" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>Barra recta con peso <br /> $35</header>
+                <header id="Caracteristicas">
+                    Caracteristicas
+                </header>
+                <p>
+
+                    Material	Acero <br />
+                    Marca	Body-Solid <br />
+                    Peso del artículo	44 Libras <br />
+                    Tipo de agarre	Knurled <br />
+                    Dimensiones del artículo LxWxH	86 x 2 x 2 pulgadas <br />
+                    Límite de peso	600 Libras <br />
+                    Tipo de acabado	Black Oxide <br />
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://sportfitness.com.pe/960-medium_default/pack-pesas-barra-recta-26kilos-discos-3k-5k-2k-redondas.jpg" alt="">
+                <img class="thumbnail" src="https://equiposdegimnasia.com/wp-content/uploads/2017/05/eg_Recta-150-40-Lbs.jpg" alt="">
+                <img class="thumbnail" src="https://www.alphagym.store/wp-content/uploads/2022/01/barra-recta-6.jpg" alt="">
+                <img class="thumbnail" src="https://di2ponv0v5otw.cloudfront.net/posts/2020/01/07/5e14ef518d6f1a12c4c7f377/s_5e1550f510f00fadacd0fef0.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

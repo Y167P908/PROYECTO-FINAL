@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://photos.encuentra24.com/t_or_fh_l/f_auto/v1/gt/22/31/66/30/22316630_85a0a9" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>Banca athletic works <br /> $40</header>
+                <header id="Caracteristicas ">
+                    Caracteristicas
+                </header>
+                <p>
+                    Es plegable:
+                    No <br />
+                    Género:
+                    Unisex <br />
+                    Marca:
+                    Athletic Works <br />
+                    Material:
+                    Acero, Espuma, Plástico, Polietileno Expandible, Mdf
+                    Modelo o serie del producto:
+                    MTDP-1007P-1 <br />
+                    País de Origen - Ensamblaje:
+                    China <br />
+                    Requiere ensamblaje:
+                    Si <br />
+                    Tamaño (Gramaje, Volumen):
+                    150*65*122cm
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://walmartgt.vtexassets.com/arquivos/ids/254841/Banca-Athletic-Works-Unidad-2-23256.jpg?v=637831714524870000" alt="">
+                <img class="thumbnail" src="https://walmartsv.vtexassets.com/arquivos/ids/231861/Banca-Athletic-Works-Resplado-Ajustable-1-21176.jpg?v=637831717819170000" alt="">
+                <img class="thumbnail" src="https://http2.mlstatic.com/D_NQ_NP_737694-MLM46102049941_052021-O.webp" alt="">
+                <img class="thumbnail" src="https://res.cloudinary.com/walmart-labs/image/upload/d_default.jpg/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00693769170222L2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

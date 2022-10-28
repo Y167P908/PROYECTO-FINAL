@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>PROYECTO FINAL</title>
+    <style>
+        @import url(WEB.css);
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="https://github.com/NOE5034/IMG/blob/main/ICONO.png?raw=true" />
+    </nav>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="ACERCA DE NOSOTROS.html">ACERCA DE NOSOTROS</a></li>
+            <li><a href="PRODUCTOS-1.html">PRODUCTOS</a></li>
+            <li><a href="CONTACTENOS.html">CONTÁCTENOS</a></li>
+            <li><a href="Mapa.html">UBICACION</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="información">
+        <h2><header>¿Sabias que?...</header></h2>
+        <p>
+            Hacer ejercicio con regularidad es parte importante de un estilo de vida saludable. Las personas que llevan una vida activa tienen menos probabilidad de enfermarse
+            y mayor probabilidad de vivir una vida más duradera.<br /><br />Hacer ejercicio te permite tener un mejor estado físico y además mejora tu salud mental y la sensación general de bienestar.
+        </p>
+        <img src="https://thumbs.dreamstime.com/b/icono-del-gimnasio-en-un-fondo-negro-128587498.jpg" />
+    </section>
+
+    <style>
+        @import url(CARRUSEL.css);
+    </style>
+    <div class="carousel">
+        <div class="carousel__item"><img src="https://cdn.shopify.com/s/files/1/0303/1135/0365/products/WebsiteProducts-35.jpg?v=1664467424" /></div>
+        <div class="carousel__item"><img src="https://mercandu.nyc3.digitaloceanspaces.com/ProductVariationImages/b89d8a63-48d8-4969-827a-2fbfdd2a7616.jpg" /></div>
+        <div class="carousel__item"><img src="https://www.corpomachine.com/Files/48757/Img/03/discos-de-peso-de-goma-con-agarre-gimnasio-0001-zoom.jpg" /></div>
+        <div class="carousel__item"><img src="https://www.corpomachine.com/Files/48757/Img/09/maquina-de-gimnasio-sentadillas-ATX-0001-big.jpg" /></div>
+        <div class="carousel__item"><img src="https://images-eu.ssl-images-amazon.com/images/I/41MPkTtkFzL.jpg" /></div>
+        <div class="carousel__item"><img src="https://m.media-amazon.com/images/I/414cBvtbFqL._AC_SS450_.jpg" /></div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll(".carousel").forEach((carousel) => {
+            const items = carousel.querySelectorAll(".carousel__item");
+            const buttonsHtml = Array.from(items, () => {
+                return `<span class="carousel__button"></span>`;
+            });
+
+            carousel.insertAdjacentHTML(
+                "beforeend",
+                `
+            <div class="carousel__nav">
+                ${buttonsHtml.join("")}
+            </div>
+        `
+            );
+
+            const buttons = carousel.querySelectorAll(".carousel__button");
+
+            buttons.forEach((button, i) => {
+                button.addEventListener("click", () => {
+                    // un-select all the items
+                    items.forEach((item) =>
+                        item.classList.remove("carousel__item--selected")
+                    );
+                    buttons.forEach((button) =>
+                        button.classList.remove("carousel__button--selected")
+                    );
+
+                    items[i].classList.add("carousel__item--selected");
+                    button.classList.add("carousel__button--selected");
+                });
+            });
+
+            // Select the first item on page load
+            items[0].classList.add("carousel__item--selected");
+            buttons[0].classList.add("carousel__button--selected");
+        });
+
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS
+        </footer>
+    </section>
+
+</body>
+</html>
+

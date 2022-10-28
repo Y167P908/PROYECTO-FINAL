@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://cdn.shopify.com/s/files/1/0400/2591/5437/products/PublicaciondeInstagram1080x1080px_3.jpg?v=1611357949" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>Mancuerna de 20 KG armables <br /> $20</header>
+                <header id="Caracteristicas ">
+                    Caracteristicas
+                </header>
+                <p>
+                    Peso máximo de usuario	120 kg<br />
+                    Peso máximo a levantar	60 KG<br />
+                    Garantía	90 días / 3 meses<br />
+                    Dimensiones	Alto 203 cm x Ancho 116 cm x Profundidad 203 cm aprox.<br />
+                    Materiales	100% HIERRO
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://cdn.shopify.com/s/files/1/0400/2591/5437/products/image_67c52424-9140-44a0-a7ff-5c57c2ca5e5a_480x480.jpg?v=1611357953" alt="">
+                <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0400/2591/5437/products/PublicaciondeInstagram1080x1080px_1_1024x1024.jpg?v=1611357949" alt="">
+                <img class="thumbnail" src="https://tiendasale.com.co/wp-content/uploads/2021/09/D09AD66A-B5C0-48DA-A7C2-093F2CC1106E.jpg" alt="">
+                <img class="thumbnail" src="https://http2.mlstatic.com/D_NQ_NP_745754-MLM44389718935_122020-O.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

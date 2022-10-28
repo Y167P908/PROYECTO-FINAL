@@ -1,0 +1,144 @@
+﻿body {
+    background-color:lightgrey;
+    width:700px;
+    height:auto;
+}
+
+nav#encabezado{
+    background-color: black;
+    width:1200px;
+    height: 100px;
+}
+
+nav header {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+    overflow: auto;
+    float: right;
+    margin-right: 20px;
+    margin-top: -45px;
+}
+
+nav#encabezado2{
+    width:1200px;
+    height:50px;
+    background-color:red;
+    text-align:center;
+    font-size:25px;
+    color:white;
+    margin-top:-30px;
+   
+}
+
+aside#izquierda{
+    width:600px;
+    height:900px;
+    margin-top:14px;
+    margin-left:50px;
+    display:table;
+}
+.sección1 {
+    width: 300px;
+    height: 375px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin-top:5px;
+    margin-left:-35px
+}
+
+.sección1 p {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+.sección1 img {
+    width: 250px;
+    height: 200px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+aside#center {
+    width:400px;
+    height: 900px;
+    margin-left:310px;
+    margin-top:-1280px;
+    padding-inline:-40px;
+}
+
+.sección2 {
+    width: 300px;
+    height: 375px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin-top:5px;
+    margin-left:30px;
+}
+
+    .sección2 p {
+        color: white;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .sección2 img {
+        width: 250px;
+        height: 200px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+
+
+aside#derecha {
+    width: 600px;
+    height: 900px;
+    margin-top:-1275px;
+    margin-left:630px;
+    padding-inline:60px;
+}
+
+.sección3 {
+    width: 300px;
+    height: 375px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+    .sección3 p {
+        color: white;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .sección3 img {
+        width: 250px;
+        height: 200px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+
+
+button a:hover{
+    color:red;
+}
+   
+button a{
+    color:white;
+}
+button{
+    width:250px;
+    height:35px;
+    border-radius:12px;
+    background-color:black;
+    border:3px solid white;
+    margin-left:20px;
+}

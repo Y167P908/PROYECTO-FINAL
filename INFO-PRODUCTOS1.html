@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://walmartsv.vtexassets.com/arquivos/ids/252024/Barra-Z-Aw-Negra-47Pulg-Para-Discos-50Mm-1-20261.jpg?v=637907638085800000" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>Barra z<br /> $300</header>
+                <header id="Caracteristicas">
+                    Caracteristicas
+                </header>
+                <p>
+
+                    Material	Aleación de acero <br />
+                    Marca	IMR <br />
+                    Peso del producto	3 Libras <br />
+                    Tipo de agarre	Knurled <br />
+                    Dimensiones del artículo LxWxH	5 x 2.01 x 2.01 pulgadas <br />
+                    Longitud del eje	42.9 Inches <br />
+                    Tamaño de empuñadura <br />
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://www.vitafuerte.com/wp-content/uploads/2021/06/Siddddn-titulo-1.jpg" alt=""> 
+                <img class="thumbnail" src="https://cdn.manomano.com/images/images_products/25128330/P/56500578_1.jpg" alt="">
+                <img class="thumbnail" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/straining-through-the-lift-royalty-free-image-1581931698.jpg" alt="">
+                <img class="thumbnail" src="https://http2.mlstatic.com/D_NQ_NP_698905-MCO47995978909_102021-O.webp " alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

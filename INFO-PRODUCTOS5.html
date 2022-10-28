@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://res.cloudinary.com/walmart-labs/image/upload/d_default.jpg/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750120335102L.jpg" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>Mancuerna de 10 kg<br /> $15</header>
+                <header id="Caracteristicas ">
+                    Caracteristicas
+                </header>
+                <p>
+                    Tipo de mancuerna: Regulable <br />
+                    Peso: 10 kg <br />
+                    Recubrimiento de la mancuerna: Sí <br />
+                    Material de recubrimiento de la mancuerna: PVC <br />
+                    Forma de la mancuerna: Redondo <br />
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/mg/gm/1p/images/product-images/img_large/00750300660242l.jpg" alt="">
+                <img class="thumbnail" src="https://m.media-amazon.com/images/I/71tMIf0KBuL._AC_SX425_.jpg" alt="">
+                <img class="thumbnail" src="https://m.media-amazon.com/images/I/81JscLN14FL._AC_SX679_.jpg" alt="">
+                <img class="thumbnail" src="https://http2.mlstatic.com/D_NQ_NP_629972-MLM44988022864_022021-O.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

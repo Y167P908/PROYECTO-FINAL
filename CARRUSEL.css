@@ -1,0 +1,47 @@
+﻿.carousel {
+    position: relative;
+}
+
+.carousel__item {
+    width:800px;
+    height:400px;
+    margin-top:90px;
+    background: transparent;
+    padding: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    display: none;
+}
+
+.carousel__item img{
+    width:100%;
+    height:100%;
+}
+    .carousel__item--selected {
+    display: block;
+}
+
+.carousel__nav {
+    width:20%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    margin-left:375px;
+    text-align: center;
+}
+
+.carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected {
+    background: rgba(255, 255, 255, 0.5);
+}

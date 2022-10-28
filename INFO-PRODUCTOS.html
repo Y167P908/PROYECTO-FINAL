@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="GYM.jpg" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>GYMBRO <br /> $30</header>
+                <header id="Caracteristicas">
+                    Caracteristicas 
+                </header>
+                <p>
+                    Peso máximo de usuario	120 kg<br />
+                    Peso máximo a levantar	60 KG<br />
+                    Garantía	90 días / 3 meses<br />
+                    Dimensiones	Alto 203 cm x Ancho 116 cm x Profundidad 203 cm aprox.<br />
+                    Materiales	100% HIERRO
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://siman.vtexassets.com/arquivos/ids/1255245-800-800?v=637535108193230000&width=800&height=800&aspect=true" alt="">
+                <img class="thumbnail" src="https://i.pinimg.com/originals/b7/56/7c/b7567cc86cae9933291b5f8aa48f22c5.jpg" alt="">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/P3F_GGuWD40/maxresdefault.jpg" alt="">
+                <img class="thumbnail" src="https://www.goldsgym.com/assets/dist/img/logo/notext/fullcolor.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+           <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

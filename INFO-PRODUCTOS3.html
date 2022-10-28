@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://www.gymtek.com.ec/wp-content/uploads/2019/11/barra-olimpica-web.jpg" alt="" class="main_img"> 
+            </div>
+
+            <div id="venta">
+                <header>Barra recta olimpica <br /> $25</header>
+                <header id="Caracteristicas">
+                    Caracteristicas
+                </header>
+                <p>
+                    Color	Black,600 lb.,No,Bushing,5 ft. <br />
+                    Código UNSPSC	49000000 <br />
+                    Nombre de la marca	Body-Solid <br />
+                    Número de artículos	1 <br />
+                    Número de modelo	OB86B <br />
+                    Número de pieza	OB60B <br />
+                    Peso del producto	44.0 libras <br />
+                    Tamaño	51.5 inches
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://m.media-amazon.com/images/I/515aqVuV4JL._AC_SX425_.jpg" alt="">
+                <img class="thumbnail" src="https://amrap.cl/image/cache/data/barra-olimpica-negra-428x428.jpg" alt="">
+                <img class="thumbnail" src="https://static-content-2.boomfit.com/3378-home_default/barra-olimpica-12kg.jpg" alt="">
+                <img class="thumbnail" src="https://i0.wp.com/fdmfitness.com/wp-content/uploads/2021/09/barra-evergy.jpg?fit=1920%2C800&ssl=1" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>

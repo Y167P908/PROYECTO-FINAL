@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>INFORMACIÓN DE PRODUCTOS</title>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+<body>
+    <nav id="encabezado">
+        <header>GYMBROS</header>
+
+        <img src="ICONO.png" />
+    </nav>
+
+    <style>
+        @import url(styles.css);
+    </style>
+    <section id="cuerpo">
+        <div class="container">
+            <div class="img_container">
+                <img src="https://falabella.scene7.com/is/image/FalabellaPE/17729600_1?wid=800&hei=800&qlt=70" alt="" class="main_img">
+            </div>
+
+            <div id="venta">
+                <header>Mancuerna hexagonales <br /> $20</header>
+                <header id="Caracteristicas">
+                    Caracteristicas
+                </header>
+                <p>
+                     
+                    Marca	Epic Fitness <br />
+                    Peso del producto	90 Libras <br />
+                    Material	Neopreno <br />
+                    Estilo	90 pound <br />
+                    Material del mango <br />
+                </p>
+                <button><a href="#">COMPRAR YA</a></button>
+            </div>
+
+
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="https://walmartsv.vtexassets.com/arquivos/ids/247874-800-600?v=637898135509570000&width=800&height=600&aspect=true" alt="">
+                <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/2305/2011/products/1600_1326_-451deb2e-168e01aaa0e--7fa82988966973082685564.upload_grande.png?v=1637274918" alt="">
+                <img class="thumbnail" src="https://lycanfitness.pe/wp-content/uploads/2018/10/dumbbell-mancuernas-hexagonales-10.jpg" alt="">
+                <img class="thumbnail" src="https://m.media-amazon.com/images/I/610CJUXXi2L.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const main_img = document.querySelector('.main_img')
+        const thumbnails = document.querySelectorAll('.thumbnail')
+
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const active = document.querySelector('.active')
+                active.classList.remove('active')
+                thumb.classList.add('active')
+                main_img.src = thumb.src
+            })
+        })
+    </script>
+
+    <section id="Eslogan">
+        <footer>
+            <p> Copyrigth &copy; 2022 - Todos los derechos reservados - GYMBROS </p>
+        </footer>
+    </section>
+</body>
+</html>
